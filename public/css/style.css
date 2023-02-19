@@ -1,0 +1,147 @@
+:root {
+  --color-black: #010101;
+  --color-white: #fff;
+  --color-grey: #333;
+
+  --font-title: Moon, sans-serif;
+  --font-text: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  --line-height: 1.5;
+}
+
+@font-face {
+  font-family: "Moon";
+  src: url(data:application/font-woff2;charset=utf-8;base64,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)
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  font-family: var(--font-text);
+  line-height: var(--line-height);
+  color: var(--color-black);
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+a {
+  color: #36454f;
+  text-decoration: none;
+  border-bottom: 1px solid #36454f;
+  transition: all 100ms cubic-bezier(0.4, 0, 0.2, 1) 0s;
+}
+
+a:hover {
+  color: #556270;
+  border-color: #556270;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+header {
+  color: var(--color-white);
+  background: var(--color-black);
+  background: linear-gradient(rgba(1, 1, 1, 1) 0%, rgba(51, 51, 51, 1));
+  padding: 3rem 0 6.5rem 0;
+  margin-bottom: -6.5rem;
+}
+
+header section {
+  display: flex;
+  max-width: 42rem;
+  margin: 0 auto;
+}
+
+header h1 {
+  font-family: var(--font-title);
+  font-weight: normal;
+  font-size: 4.2rem;
+  line-height: 1;
+  margin: 0;
+  word-spacing: -1.5rem;
+}
+
+header h2 {
+  font-weight: normal;
+  margin: 0;
+  text-align: right;
+}
+
+header img {
+  width: 10rem;
+  border-radius: 100%;
+  border: 0.1rem solid var(--color-white);
+  margin-left: auto;
+}
+
+main {
+  position: relative;
+  color: var(--color-grey);
+  font-size: 1.25rem;
+  line-height: 1.6;
+  background: var(--color-white);
+  margin-top: 6.5rem;
+  padding-bottom: 4rem;
+}
+
+main:before {
+  display: block;
+  content: "";
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg preserveAspectRatio='none' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolygon points='0 0 0 100 100 100' fill='%23fff' /%3E%3C/svg%3E%0A");
+  height: 6.5rem;
+  position: absolute;
+  left: 0;
+  top: -6.5rem;
+  width: 100%;
+}
+
+main section {
+  max-width: 42rem;
+  margin: 0 auto;
+}
+
+main p {
+  max-width: 36rem;
+  margin-bottom: 1rem;
+}

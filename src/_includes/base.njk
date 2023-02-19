@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="{{ metadata.language }}">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ metadata.title }}</title>
+    <meta name="description" content="{{ metadata.description }}">
+    <link rel="icon" type="image/x-icon" href="{{ '/images/favicon.ico' | url }}">
+    {%- css %}{% include "public/css/style.css" %}{% endcss %}
+		<style>{% getBundle "css" %}</style>
+  </head>
+  <body>
+    <header>
+      <section>
+        <div>
+          <h1>{{ title }}</h1>
+          <h2>{{ subtitle }}</h2>
+        </div>
+        <img src="{{ '/images/face.png' | url }}" alt="{{ title }}">
+      </section>
+    </header>
+    <main>
+      <section>
+        <p>
+          {{ content | safe }}
+        </p>
+        <a href="mailto:hello@samireunanen.com">Say hello!</a>
+      </section>
+    </main>
+  </body>
+</html>
