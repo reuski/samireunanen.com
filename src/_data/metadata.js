@@ -1,5 +1,5 @@
 module.exports = {
-  title: "Sami Reunanen | UI Developer",
+  title: "Sami Reunanen - UI Developer",
   url: "https://samireunanen.com/",
   language: "en",
   description: "Hi, I'm Sami. I'm an experienced UI developer who loves to learn and explore new technologies.",

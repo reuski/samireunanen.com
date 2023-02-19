@@ -1,0 +1,22 @@
+[
+  {
+    "school": "University of Turku",
+    "degree": "Courses on Psychology",
+    "time": "2022"
+  },
+  {
+    "school": "Universities of Turku & Helsinki",
+    "degree": "Courses on Artificial Intelligence",
+    "time": "2021"
+  },
+  {
+    "school": "Turku Adult Education Center",
+    "degree": "Specialist vocational degree in Graphic Design",
+    "time": "2002"
+  },
+  {
+    "school": "Loimaa Vocational Institute",
+    "degree": "Undergraduate degree in Business Administration",
+    "time": "1999"
+  }
+]

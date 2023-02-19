@@ -141,15 +141,15 @@ footer a + a {
   margin-left: 1.5rem;
 }
 
-footer a:hover svg {
-  fill: #556270;
+footer svg {
+  width: 2.5rem;
+  height: 2.5rem;
+  fill: #36454f;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1) 0s;
 }
 
-footer svg {
-  fill: #36454f;
-  width: 3rem;
-  height: 3rem;
-  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1) 0s;
+footer a:hover svg {
+  fill: #556270;
 }
 
 @media only screen and (min-width: 800px) {

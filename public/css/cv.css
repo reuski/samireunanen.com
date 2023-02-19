@@ -1,0 +1,73 @@
+:root {
+  --color-white: #fff;
+  --color-black: #000;
+  --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  --line-height: 1.5;
+}
+
+html {
+  font-size: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  font-family: var(--font-family);
+  line-height: var(--line-height);
+  color: var(--color-black);
+  min-height: 100vh;
+  max-width: 65vw;
+  margin: 2rem auto;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+}
+
+header {
+  display: flex;
+}
+
+header img {
+  border-radius: 1rem;
+  border: 1pt solid black;
+  margin-left: auto;
+}
+
+header h1 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+header section h1 {
+  font-size: 1rem;
+}
+
+header section p {
+  margin-bottom: 0;
+}
+
+header section p span {
+  font-style: italic;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+main section h1 {
+  font-size: 1.25rem;
+  border-bottom: 1pt solid black;
+}
+
+h4 {
+  margin: 0;
+}
+
+p {
+  max-width: 38rem;
+  margin: 0 0 1rem;
+}
+
+h4 span {
+  font-weight: normal;
+  font-style: italic;
+}

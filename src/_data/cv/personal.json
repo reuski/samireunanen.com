@@ -1,0 +1,16 @@
+{
+  "name": "Sami Reunanen",
+  "title": "User Interface Developer",
+  "location": "Turku, Finland",
+  "email": "sami.reunanen@gmail.com",
+  "languages": [
+    {
+      "language": "Finnish",
+      "level": "Native"
+    },
+    {
+      "language": "English",
+      "level": "Fluent"
+    }
+  ]
+}

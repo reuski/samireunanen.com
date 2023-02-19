@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="{{ metadata.language }}">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ metadata.title }}</title>
+    <meta name="robots" content="noindex">
+    <link rel="icon" type="image/x-icon" href="{{ '/images/favicon.ico' | url }}">
+    {%- css %}* { box-sizing: border-box; }{% endcss %}
+    {%- css %}{% include "public/css/cv.css" %}{% endcss %}
+    <style>{% getBundle "css" %}</style>
+  </head>
+  <body>
+    <header>
+      <div>
+        <h1>{{ cv.personal.name }}</h1>
+        <p>{{ cv.personal.title }}<br> {{ cv.personal.location }}<br> {{ cv.personal.email }}</p>
+        <section>
+          <h1>Languages</h1>
+          {% for item in cv.personal.languages %}
+            <p>{{ item.language }}
+              <span>— {{ item.level }}</span>
+            </p>
+          {% endfor %}
+        </section>
+      </div>
+      <img src="{{ '/images/cv.webp' | url }}" width="180" height="180" alt="{{ title }}">
+    </header>
+    <main>
+      <section>
+        <h1>About</h1>
+        {{ content | safe }}
+      </section>
+      <section>
+        <h1>Experience</h1>
+        {% for item in cv.experience %}
+          <div>
+            <h4>{{ item.employer }}
+              <span>— {{ item.title }}</span>
+            </h4>
+            <p>{{ item.time }}</p>
+          </div>
+        {% endfor %}
+      </section>
+      <section>
+        <h1>Education</h1>
+        {% for item in cv.education %}
+          <div>
+            <h4>{{ item.school }}
+              <span>— {{ item.time }}</span>
+            </h4>
+            <p>{{ item.degree }}</p>
+          </div>
+        {% endfor %}
+      </section>
+    </main>
+  </body>
+</html>
