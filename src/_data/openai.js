@@ -14,7 +14,7 @@ module.exports = async function () {
       model: "text-davinci-003",
       prompt: "First person introduction for Sami. Experienced, curious and pedantic UI developer. Loves video games, music, movies and books. Thinks owls are cool.",
       temperature: 0.5,
-      max_tokens: 80,
+      max_tokens: 128,
     }),
   };
 
