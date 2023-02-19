@@ -6,6 +6,7 @@
     <title>{{ metadata.title }}</title>
     <meta name="description" content="{{ metadata.description }}">
     <link rel="icon" type="image/x-icon" href="{{ '/images/favicon.ico' | url }}">
+    {%- css %}* { box-sizing: border-box; }{% endcss %}
     {%- css %}{% include "public/css/style.css" %}{% endcss %}
 		<style>{% getBundle "css" %}</style>
   </head>
