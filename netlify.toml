@@ -8,8 +8,8 @@ package = "@netlify/plugin-lighthouse"
 [plugins.inputs.thresholds]
 accessibility = 0.9
 best-practices = 0.9
-performance = 0.9
-seo = 0.9
+performance = 1
+seo = 1
 
 [plugins.inputs]
 output_path = "reports/lighthouse/index.html"
