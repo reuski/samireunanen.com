@@ -27,11 +27,25 @@
       <img src="{{ '/images/cv.webp' | url }}" width="180" height="180" alt="{{ title }}">
     </header>
     <main>
-      <section>
+      <section id="about">
         <h1>About</h1>
         {{ content | safe }}
       </section>
-      <section>
+      <section id="competences">
+        <h1>Competences</h1>
+        <div>
+          {% for item in cv.competences %}
+            <div>
+              <h4>{{ item.title }}</h4>
+              <div style="width: 100%; background: #ccc; overflow: hidden;">
+                <div style="float: left; background: black; width: {{ item.level }}%; height: 1rem;"></div>
+              </div>
+              <p>{{ item.description }}</p>
+            </div>
+          {% endfor %}
+        </div>
+      </section>
+      <section id="experience">
         <h1>Experience</h1>
         {% for item in cv.experience %}
           <div>
@@ -42,7 +56,7 @@
           </div>
         {% endfor %}
       </section>
-      <section>
+      <section id="education">
         <h1>Education</h1>
         {% for item in cv.education %}
           <div>

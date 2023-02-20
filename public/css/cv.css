@@ -27,8 +27,7 @@ header {
 }
 
 header img {
-  border-radius: 1rem;
-  border: 1pt solid black;
+  border-radius: 0.5rem;
   margin-left: auto;
 }
 
@@ -63,11 +62,22 @@ h4 {
 }
 
 p {
-  max-width: 38rem;
+  max-width: 42rem;
   margin: 0 0 1rem;
 }
 
 h4 span {
   font-weight: normal;
   font-style: italic;
+}
+
+#competences > div {
+  display: grid;
+  grid-auto-flow: column dense; 
+  grid-template-rows: repeat(4, 1fr); 
+  gap: 0 2rem;
+}
+
+#competences h4 {
+  margin-bottom: 0.25rem;
 }

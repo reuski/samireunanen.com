@@ -100,7 +100,6 @@ header h2 {
 
 header img {
   border-radius: 100%;
-  border: 0.1rem solid var(--color-white);
   margin: 0 auto;
 }
 
