@@ -14,7 +14,9 @@
     <header>
       <div>
         <h1>{{ cv.personal.name }}</h1>
-        <p>{{ cv.personal.title }}<br> {{ cv.personal.location }}<br> {{ cv.personal.email }}</p>
+        <p>{{ cv.personal.title }}<br> {{ cv.personal.location }}<br> {{ cv.personal.email }}<br>
+          <a href="https://www.linkedin.com/in/reuski">https://www.linkedin.com/in/reuski</a>
+        </p>
         <section>
           <h1>Languages</h1>
           {% for item in cv.personal.languages %}
@@ -31,10 +33,10 @@
         <h1>About</h1>
         {{ content | safe }}
       </section>
-      <section id="competences">
-        <h1>Competences</h1>
+      <section id="skills">
+        <h1>Skills</h1>
         <div>
-          {% for item in cv.competences %}
+          {% for item in cv.skills %}
             <div>
               <h4>{{ item.title }}</h4>
               <div style="width: 100%; background: #ccc; overflow: hidden;">
